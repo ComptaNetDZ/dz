@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Services Comptables</title>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\User\Desktop\COMPTA/logo.jpg" alt="Logo ComptaNet" class="logo" id="header-logo" width="500" height="100">
+        <h1>Bienvenue chez ComptaNet</h1>
+        <h2>Confiance, Clarté et Compétence pour Votre Entreprise.</h2>
+        <p>Votre partenaire de confiance pour tous vos besoins comptables et fiscaux.</p>
+    </header>
+    
+    <h2>À Propos de ComptaNet</h2>
+    <section id="a-propos" class="about-container">
+        <p>
+            <strong>ComptaNet</strong> est une entreprise spécialisée dans les services comptables et fiscaux, dédiée à fournir des solutions personnalisées pour les entreprises de toutes tailles. 
+            Notre équipe d'experts vous accompagne avec transparence et professionnalisme, vous permettant de vous concentrer sur ce qui compte vraiment : la croissance de votre entreprise. 
+            Grâce à notre approche innovante, nous vous offrons un soutien continu et des conseils adaptés à vos besoins spécifiques. 
+            Que vous soyez une startup ou une entreprise bien établie, <strong>ComptaNet</strong> est votre partenaire de confiance pour la gestion de vos finances.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services-container">
+            <div class="service-card card1" onclick="openModal('service1')">
+                <img src="C:\Users\User\Desktop\COMPTA/comptabilite.jpg" alt="Comptabilité Générale" class="service-image">
+                <h3>Comptabilité Générale</h3>
+                <p style="color: #000000;">Nous offrons un service complet de comptabilité générale, assurant la gestion de vos comptes avec précision et fiabilité.</p>
+            </div>
+            <div class="service-card card2" onclick="openModal('service2')">
+                <img src="C:\Users\User\Desktop\COMPTA/declarations_fiscales.jpg" alt="Déclarations Fiscales" class="service-image">
+                <h3>Déclarations Fiscales</h3>
+                <p style="color: #000000;">Nous gérons vos déclarations fiscales pour garantir leur conformité et optimiser vos obligations fiscales.</p>
+            </div>
+            <div class="service-card card3" onclick="openModal('service3')">
+                <img src="C:\Users\User\Desktop\COMPTA/gestion_de_paie.jpg" alt="Gestion de Paie" class="service-image">
+                <h3>Gestion de Paie</h3>
+                <p style="color: #000000;">Une gestion de paie efficace pour vos employés, assurant précision et respect des délais.</p>
+            </div>
+            <div class="service-card card4" onclick="openModal('service4')">
+                <img src="C:\Users\User\Desktop\COMPTA/consultation_fiscale.jpg" alt="Consultation Fiscale" class="service-image">
+                <h3>Consultation Fiscale</h3>
+                <p style="color: #000000;">Des conseils fiscaux personnalisés pour optimiser votre stratégie fiscale.</p>
+            </div>
+            <div class="service-card card5" onclick="openModal('service5')">
+                <img src="C:\Users\User\Desktop\COMPTA/assistance_startups.jpg" alt="Assistance aux Startups" class="service-image">
+                <h3>Assistance aux Startups</h3>
+                <p style="color: #000000;">Un accompagnement spécialisé pour les startups dans leur développement comptable et fiscal.</p>
+            </div>
+            <div class="service-card card6" onclick="openModal('service6')">
+                <img src="C:\Users\User\Desktop\COMPTA/audit_comptable.jpg" alt="Audit Comptable" class="service-image">
+                <h3>Audit Comptable</h3>
+                <p style="color: #000000;">Des audits comptables pour assurer la conformité et l'intégrité de vos comptes.</p>
+            </div>
+            <div class="service-card card7" onclick="openModal('service7')">
+                <img src="C:\Users\User\Desktop\COMPTA/formation_comptable.jpg" alt="Formation Comptable" class="service-image">
+                <h3>Formation Comptable</h3>
+                <p style="color: #000000;">Des formations sur mesure pour renforcer les compétences de votre équipe en comptabilité.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pourquoi-nous">
+        <h2>Pourquoi nous choisir ?</h2>
+        <div class="pourquoi-container">
+            <div class="pourquoi-item">
+                <h3>Expertise</h3>
+                <p>Une équipe de professionnels expérimentés à votre service.</p>
+            </div>
+            <div class="pourquoi-item">
+                <h3>Confiance</h3>
+                <p>Des services transparents et fiables pour votre tranquillité d'esprit.</p>
+            </div>
+            <div class="pourquoi-item">
+                <h3>Personnalisation</h3>
+                <p>Des solutions adaptées à vos besoins spécifiques.</p>
+            </div>
+            <div class="pourquoi-item">
+                <h3>Innovation</h3>
+                <p>Des outils modernes pour une gestion efficace.</p>
+            </div>
+            <div class="pourquoi-item">
+                <h3>Support Continu</h3>
+                <p>Un accompagnement régulier tout au long de votre activité.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fenêtre Modale -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2 style="color: #004d00;">Contactez-nous</h2>
+        <ul>
+            
+            <li>
+                <i class="fas fa-envelope"></i> <a href="mailto:comptanet05@gmail.com" style="color: #004d00;">comptanet05@gmail.com</a>
+            </li>
+            <li>
+                <i class="fab fa-facebook"></i> <a href="https://web.facebook.com/people/Compta-Net/pfbid02tYy3axsPUUN2oZ5qPzJBbhF3cjJ7V3mpXGxRBbFMqhHJZgAXbGvvNmFS1oMWadZJl/" target="_blank" style="color: #004d00;">Compta Net</a>
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/compta_net_/" target="_blank" style="color: #004d00;">compta_net_</a>
+            </li>
+            <li>
+                <i class="fab fa-tiktok"></i> <a href="https://www.tiktok.com/@compta_net" target="_blank" style="color: #004d00;">compta net</a>
+            </li>
+            <li>
+                <i class="fas fa-phone"></i> 06 75 92 14 47
+            </li>
+        </ul>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ComptaNet. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
